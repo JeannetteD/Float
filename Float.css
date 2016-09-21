@@ -1,0 +1,48 @@
+#body_wrap{
+  display:flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+#header, #main, .aside1, .aside2,#footer {flex:1 100%}
+
+#header{
+  background: lightblue;
+}
+
+#main{
+  background: red;
+  padding:20px;
+}
+
+.aside1{
+  background: green;
+  padding:20px;
+}
+
+.aside2{
+  background: yellow;
+  padding:20px;
+}
+
+
+#footer{
+  background: purple;
+}
+@media all and (min-width: 600px){
+  .aside {
+    flex: 1 auto;
+  }
+}
+@media all and (min-width:900px) {
+  #main{flex:1; order:2}
+  #header{order:0}
+  .aside1 {flex:1;order:1}
+  .aside2 {flex:1;order:3}
+  #footer {order:4}
+
+}
+img {width:350px;
+height:220px;
+
+
+}
